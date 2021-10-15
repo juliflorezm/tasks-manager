@@ -47,7 +47,7 @@ router.get('/tasks', auth, async (req, res) => {
         res.send(req.user.tasks)
     } catch(e) {
         res.status(500).send(e)
-    }
+    } 
 })
 
 router.get('/tasks/:id', auth, async (req, res) => {
